@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/JoueurIA.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/JoueurHumain.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/04 BGM #04.mp3" type="AudioStream" id=3]
+[ext_resource path="res://bord.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/Game.gd" type="Script" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 5.51797, 110.23 )
+
+[node name="Game" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+
+[node name="JoueurIA" parent="." instance=ExtResource( 1 )]
+position = Vector2( 239.926, 60.0542 )
+
+[node name="JoueurHumain" parent="." instance=ExtResource( 2 )]
+position = Vector2( 15.6477, 45.1086 )
+
+[node name="Spawn" type="Position2D" parent="."]
+position = Vector2( 129.365, 68.7903 )
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="bord" parent="." groups=[
+"bord",
+] instance=ExtResource( 4 )]
+position = Vector2( 131.845, -6.82674 )
+scale = Vector2( 16, 1 )
+
+[node name="bord2" parent="." groups=[
+"bord",
+] instance=ExtResource( 4 )]
+position = Vector2( 132.833, 151.267 )
+scale = Vector2( 16, 1 )
+
+[node name="Player1Behind" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player1Behind"]
+position = Vector2( -4.50777, 67.3261 )
+shape = SubResource( 1 )
+
+[node name="Player2Behind" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player2Behind"]
+position = Vector2( 256.401, 57.1488 )
+shape = SubResource( 1 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+volume_db = -5.0
+autoplay = true
+
+[connection signal="area_entered" from="Player1Behind" to="." method="_on_Player2Behind_area_entered"]
+[connection signal="area_entered" from="Player2Behind" to="." method="_on_Player1Behind_area_entered"]

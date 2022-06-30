@@ -1,0 +1,16 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://pg1y63edmcya"
+path="res://.godot/imported/8d82b5_Super_Mario_Bros_Bump_Sound_Effect.mp3-4e10bcbf7534ef66063d026f6ab11273.mp3str"
+
+[deps]
+
+source_file="res://assets/8d82b5_Super_Mario_Bros_Bump_Sound_Effect.mp3"
+dest_files=["res://.godot/imported/8d82b5_Super_Mario_Bros_Bump_Sound_Effect.mp3-4e10bcbf7534ef66063d026f6ab11273.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0

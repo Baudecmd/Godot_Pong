@@ -1,0 +1,30 @@
+102b54792f6b2ef812636a2bdaeb9d34
+::res://::1637680631
+Balle.gd::GDScript::-1::1629720771::0::1::::<><>::
+Balle.tscn::PackedScene::-1::1629721645::0::1::::<><>::res://assets/balle.png<>res://Balle.gd<>res://assets/8d82b5_Super_Mario_Bros_Bump_Sound_Effect.mp3
+bord.tscn::PackedScene::-1::1628111414::0::1::::<><>::
+CanvasLayer2.gd::GDScript::-1::1628097287::0::1::::<>CanvasLayer<>::
+default_env.tres::Environment::-1::1631804209::0::1::::<><>::
+fake_explosion_particles.gd::GDScript::-1::1629721109::0::1::::<><>::
+fake_explosion_particles.tscn::PackedScene::-1::1629721645::0::1::::<><>::res://fake_explosion_particles.gd
+GameScene.tscn::PackedScene::1859363890579788358::1637680283::0::1::::<><>::res://assets/Game.tscn<>uid://ch8dcbwtv3nqw<>res://CanvasLayer2.gd<>res://Transition.tscn
+icon.png::StreamTexture2D::2192334543129302218::1628081998::1637680274::1::::<><>::
+JoueurIA.gd::GDScript::-1::1628171785::0::1::::JoueurIA<>Joueur<>::
+Rebound.gd::GDScript::-1::1628164010::0::1::::<>Particles2D<>::
+Rebound.tscn::PackedScene::-1::1629472035::0::1::::<><>::res://Rebound.gd
+Transition.tscn::PackedScene::-1::1628175090::0::1::::<><>::res://assets/Minecrafter.Reg.ttf<>res://TransitionScreen.gd
+TransitionScreen.gd::GDScript::-1::1628175336::0::1::::<>Control<>::
+::res://assets/::1637680274
+04 BGM #04.mp3::AudioStreamMP3::6694130073737730963::1628110880::1637680274::1::::<><>::
+8d82b5_Super_Mario_Bros_Bump_Sound_Effect.mp3::AudioStreamMP3::1066842093625093576::1628111038::1637680274::1::::<><>::
+balle.png::StreamTexture2D::3491669848208137542::1628087366::1637680274::1::::<><>::
+Game.gd::GDScript::-1::1629721636::0::1::::<><>::
+Game.tscn::PackedScene::-1::1629721666::0::1::::<><>::res://assets/JoueurIA.tscn<>res://assets/JoueurHumain.tscn<>res://assets/04 BGM #04.mp3<>res://bord.tscn<>res://assets/Game.gd
+Joueur.gd::GDScript::-1::1628242049::0::1::::<><>::
+joueur.png::StreamTexture2D::633219896927317598::1628083066::1637680274::1::::<><>::
+Joueur.tscn::PackedScene::-1::1628242049::0::1::::<><>::res://assets/joueur.png<>res://assets/Joueur.gd
+JoueurHumain.gd::GDScript::-1::1629720563::0::1::::JoueurHumain<>Joueur<>::
+JoueurHumain.tscn::PackedScene::-1::1629721645::0::1::::<><>::res://assets/Joueur.tscn<>res://assets/JoueurHumain.gd
+JoueurIA.tscn::PackedScene::-1::1628172226::0::1::::<><>::res://JoueurIA.gd<>res://assets/Joueur.tscn
+line.png::StreamTexture2D::5332473548704010106::1628096327::1637680274::1::::<><>::
+Minecrafter.Reg.ttf::FontData::1550623610029994440::1628095031::1637680274::1::::<><>::

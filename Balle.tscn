@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://marlebx0njdu"]
+
+[ext_resource type="Texture2D" uid="uid://bp0nj64aobpko" path="res://assets/balle.png" id="1"]
+[ext_resource type="Script" path="res://Balle.gd" id="2"]
+[ext_resource type="AudioStream" uid="uid://pg1y63edmcya" path="res://assets/8d82b5_Super_Mario_Bros_Bump_Sound_Effect.mp3" id="3"]
+
+[sub_resource type="ParticlesMaterial" id="1"]
+spread = 30.0
+gravity = Vector3(0, 0, 0)
+
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(11.1461, 10.8004)
+
+[node name="Balle" type="CharacterBody2D"]
+script = ExtResource( "2" )
+speed = 2
+speedFactor = 1.2
+
+[node name="Trail" type="GPUParticles2D" parent="."]
+emitting = false
+amount = 40
+local_coords = false
+process_material = SubResource( "1" )
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource( "1" )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( "2" )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( "3" )
+volume_db = 2.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
